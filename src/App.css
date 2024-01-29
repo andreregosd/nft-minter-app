@@ -1,38 +1,78 @@
+html {
+  background: #89cff0;
+  color: #fff;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.info-container {
+  margin-bottom: 40px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.info {
+  font-size: 18px;
+  font-weight: 600;
+}
+button {
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #fff;
+  color: #000;
+  border-color: #000;
+}
+.nft-image-container {
+  width: calc(50% - 20px);
+  float: left;
+  padding-right: 20px;
+}
+.nft-info {
+  width: calc(50% - 20px);
+  float: left;
+  padding-left: 20px;
+  padding-top: 30px;
+  text-align: left;
+}
+.nft-image-container img {
+  width: 400px;
+  float: right;
+  border-radius: 10px;
+}
+.nft-info h3 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+label {
+  font-weight: 800;
+  font-size: 16px;
+}
+.nft-name, .nft-description, .nft-token-id {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.loading-component {
+  padding-top: 40px;
+}
+.loading-component img {
+  width: 80px;
+}
+@media only screen and (max-width: 900px) {
+  .nft-image-container, .nft-info {
+    width: 100%;
+    float: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .nft-image-container img {
+    float: none;
   }
-  to {
-    transform: rotate(360deg);
+  .nft-info {
+    text-align: center;
   }
 }
